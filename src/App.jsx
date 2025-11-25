@@ -27,16 +27,47 @@ export default function App() {
     <div className="p-6 max-w-4xl mx-auto">
       <h1 className="text-4xl font-bold mb-6 text-center">Solstice Flares Calculator</h1>
 
-      {/* Input Fields */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
-        <input className="p-2 rounded bg-gray-800" type="number" value={fdv} onChange={e=>setFDV(Number(e.target.value))} placeholder="FDV Launch" />
-        <input className="p-2 rounded bg-gray-800" type="number" value={airdropPct} onChange={e=>setAirdropPct(Number(e.target.value))} placeholder="Airdrop Allocation %" />
-        <input className="p-2 rounded bg-gray-800" type="number" value={airdropSupply} onChange={e=>setAirdropSupply(Number(e.target.value))} placeholder="Supply of Airdrop" />
-        <input className="p-2 rounded bg-gray-800" type="number" value={flaresEarned} onChange={e=>setFlaresEarned(Number(e.target.value))} placeholder="Flares Earned" />
-        <input className="p-2 rounded bg-gray-800" type="number" value={totalFlares} onChange={e=>setTotalFlares(Number(e.target.value))} placeholder="Total Solstice Flares" />
-        <input className="p-2 rounded bg-gray-800" type="number" value={deposit} onChange={e=>setDeposit(Number(e.target.value))} placeholder="Your Deposit" />
-        <input className="p-2 rounded bg-gray-800" type="number" value={flareUSD} onChange={e=>setFlareUSD(Number(e.target.value))} placeholder="Per Flare USD Value" />
-        <input className="p-2 rounded bg-gray-800" type="number" value={tvl} onChange={e=>setTVL(Number(e.target.value))} placeholder="TVL" />
+      {/* Input Fields with Labels */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+        <div>
+          <label className="block mb-1 font-semibold">FDV Estimated at Launch</label>
+          <input className="p-2 rounded w-full bg-gray-800" type="number" value={fdv} onChange={e=>setFDV(Number(e.target.value))} />
+        </div>
+
+        <div>
+          <label className="block mb-1 font-semibold">Airdrop Allocation (%)</label>
+          <input className="p-2 rounded w-full bg-gray-800" type="number" value={airdropPct} onChange={e=>setAirdropPct(Number(e.target.value))} />
+        </div>
+
+        <div>
+          <label className="block mb-1 font-semibold">Supply of Airdrop</label>
+          <input className="p-2 rounded w-full bg-gray-800" type="number" value={airdropSupply} onChange={e=>setAirdropSupply(Number(e.target.value))} />
+        </div>
+
+        <div>
+          <label className="block mb-1 font-semibold">Flares Earned (Daily)</label>
+          <input className="p-2 rounded w-full bg-gray-800" type="number" value={flaresEarned} onChange={e=>setFlaresEarned(Number(e.target.value))} />
+        </div>
+
+        <div>
+          <label className="block mb-1 font-semibold">Total Solstice Flares</label>
+          <input className="p-2 rounded w-full bg-gray-800" type="number" value={totalFlares} onChange={e=>setTotalFlares(Number(e.target.value))} />
+        </div>
+
+        <div>
+          <label className="block mb-1 font-semibold">Your Deposit (USD)</label>
+          <input className="p-2 rounded w-full bg-gray-800" type="number" value={deposit} onChange={e=>setDeposit(Number(e.target.value))} />
+        </div>
+
+        <div>
+          <label className="block mb-1 font-semibold">Per Flare USD Value</label>
+          <input className="p-2 rounded w-full bg-gray-800" type="number" value={flareUSD} onChange={e=>setFlareUSD(Number(e.target.value))} />
+        </div>
+
+        <div>
+          <label className="block mb-1 font-semibold">TVL (USD)</label>
+          <input className="p-2 rounded w-full bg-gray-800" type="number" value={tvl} onChange={e=>setTVL(Number(e.target.value))} />
+        </div>
       </div>
 
       {/* Results */}
