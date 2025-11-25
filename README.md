@@ -35,10 +35,6 @@ Built with:
 - Fully responsive  
 - High-quality layout  
 
-## 🚀 Live Demo (after deploying)
-**https://your-vercel-deployment-url.vercel.app**
-
-Replace this after deploying.
 
 ## 📁 Project Structure
 
@@ -74,31 +70,6 @@ npm run build
 
 This generates the final production build inside the `dist/` folder.
 
-## ☁️ Deploying on Vercel (Manual, No Software Needed)
-
-You do **not** need Git tools — only GitHub.
-
-### **Step 1 — Upload to GitHub**
-1. Go to GitHub → New Repository  
-2. Click **Add file → Upload files**  
-3. Upload **all files from the ZIP**  
-4. Commit
-
-### **Step 2 — Deploy on Vercel**
-1. Go to **https://vercel.com/dashboard**  
-2. Click **New Project**  
-3. Select your GitHub repository  
-4. Configure build settings:
-
-| Setting | Value |
-|--------|--------|
-| **Framework** | Vite |
-| **Build Command** | `npm run build` |
-| **Output Directory** | `dist` |
-
-5. Click **Deploy**
-
-Your site goes live in 20–30 seconds.
 
 ## 📊 Technologies Used
 
